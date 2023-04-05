@@ -13,27 +13,28 @@ package iFlynnJava.Functions.Task3;
  * и если да, то увеличивать счетчик на единицу (который заводится предварительно).
  */
 public class Task3 {
-    public static void main(String[] args) {
+  /** public static void main(String[] args) {
 
         for (int i = 1; i < 1000; i++) {
             if (F(i) == 3)
-              int count++;
+             // int count++;
         }
-        System.out.println(F(3));
+        System.out.println(F(10));
     }
 
     static int F(int n) {
-        int res = 0;
-        if (n == 0) {
-            res = F(n);
+
+        if (F(0) == 0) {
+
+            System.out.println("Равно нулю");
         } else if (n > 0) {
-            res = F(n / 2);
+            n = F(n / 2);
         } else if (n % 10 == 0) {
-            res = 1 + F(n - 1);
+            n = 1 + F(n - 1);
         }
-        return res;
+        return n;
     }
 
-
+*/
 }
 
