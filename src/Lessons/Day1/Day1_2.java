@@ -1,6 +1,4 @@
-
 package Lessons.Day1;
-
 public class Day1_2 {
     public static int factorial(int n){
         int res = 1;
@@ -16,13 +14,13 @@ public class Day1_2 {
 //        System.out.println(dat[1].length);
         
         System.out.println("summa=" +sum(dat[0], dat[1], dat[0]));
-        
         System.out.println(Double.parseDouble("51.4e-2"));
     }
     public static int sum(int[] ... arg){
         int res = 0;
-        for (int[] vec:arg) 
-             for (int x:vec) res +=x;
+        for (int[] vec:arg)  //vec строка массива первый цикл считает по строкам
+             for (int x:vec) //x  элемент в строке строчка в массиве второй цикл
+                 res +=x;
         
         return res;
     }

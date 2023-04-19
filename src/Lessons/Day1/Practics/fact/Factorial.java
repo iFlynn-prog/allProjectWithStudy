@@ -1,6 +1,6 @@
-package Lessons.Day1.Practics;
+package Lessons.Day1.Practics.fact;
 
-public class FacrorialRecurs {
+public class Factorial {
     public static void main(String[] args) {
         System.out.println(factorial(5));
     }
@@ -9,10 +9,8 @@ public class FacrorialRecurs {
         int res = 1;
         for (int i = 1; i <= n; i++) {
             res *= i;
-            res = factorial(n -1);
         }
         return res;
     }
-
 
 }

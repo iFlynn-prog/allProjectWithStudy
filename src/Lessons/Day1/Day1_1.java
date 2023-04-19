@@ -1,5 +1,4 @@
 package Lessons.Day1;
-
 public class Day1_1 {
      public static int sum(int a, int b, int c){
         int res = a+b+c;
@@ -13,13 +12,18 @@ public class Day1_1 {
     public static int sum(int ... arg){
         int res = 0;
         // цикл для коллекций
-        for (int di:arg) res +=di;
+        for (int di:arg)
+            res +=di;
         return res;
     }
     public static void main(String[] args) {
         short a, b=5, c=2;
+        // (short) явное привидение в типу данных
         a=(short)(b+c);
+
+
         System.out.println(a);
+        // ~a операция инверсия, меняет все биты на противоположные
         System.out.println(~a);
         // var ключевое слово, компилятор сам приводит к типу данных
        // var num = 5;
@@ -33,5 +37,5 @@ public class Day1_1 {
         max = (a>b) ? a: b;
         
     }
-    
+
 }
