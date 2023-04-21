@@ -2,16 +2,18 @@ package Testing.progect.string;
 
 public class dstring {
     public static void main(String[] args) {
-        String st1 = "Java ";
-        String st2 = "  java";
+        String st1 = "  JAVA";
+        String st2 = "java cool  ";
         String st3 = "I'm study JAVA";
 
         System.out.println("=============================================");
 
-        int count = 0;   //цикл выводит символы и
-        for (char i : st3.toCharArray())
+
+            int count = 0;   //цикл выводит символы и
+            for (char i : st3.toCharArray())
             if (i == 'A') count++;
-        System.out.println("Summa A" + count);
+            System.out.println("Summa A" + count);
+
 
         System.out.println("=============================================");
 
@@ -34,6 +36,9 @@ public class dstring {
         System.out.println(st1.trim()); //удаляет начальные и конечные пробелы
         System.out.println(st2.toUpperCase());  //переводит все символы строки в  верхний регистр
         System.out.println(st1.toLowerCase()); //переводит все символы строки в нижний регистр
+        System.out.println("-------------------------------------------");
+
+
 
 
     }
