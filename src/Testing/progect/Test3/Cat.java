@@ -1,0 +1,8 @@
+package Testing.progect.Test3;
+
+public class Cat implements Pet {
+    @Override
+    public void say() {
+        System.out.println("Мяу -Мяу");
+    }
+}
