@@ -33,15 +33,14 @@ class PassengerCar extends Car {
         this.yearOfChange = yearOfChange;
     }
 
-    public void setRepairBook() {
+    public void RepairBook() {
         Map<String, Integer> repairBook = new HashMap<>();
         repairBook.put("Замена двигателя", 2011);
         repairBook.put("Шиномонтаж", 2015);
         repairBook.put("Замена масла", 2017);
     }
-    public void setRepairBook(String repairBook) {
-        this.repairBook = repairBook;
-    }
+
+
 }
 
 class Truck extends Car {
