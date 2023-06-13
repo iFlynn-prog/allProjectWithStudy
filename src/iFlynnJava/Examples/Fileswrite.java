@@ -1,6 +1,7 @@
 package iFlynnJava.Examples;
 
 import java.io.*;
+import java.util.Collection;
 
 public class Fileswrite {
     public static void main(String[] args) throws IOException {
