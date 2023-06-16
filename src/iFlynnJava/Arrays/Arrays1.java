@@ -104,7 +104,7 @@ public class Arrays1 {
     public static void arrTask9() {
         Random in = new Random();
         int[] arr = new int[]{23, 34, 35, 40};
-       /* for (int i = 0; i < arr.length; i++) {
+       /** for (int i = 0; i < arr.length; i++) {
             arr[i] = in.nextInt(99 - 10) + 10;
             System.out.print("[" + arr[i] + "]");
         }*/
