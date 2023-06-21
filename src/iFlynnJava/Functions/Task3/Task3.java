@@ -12,29 +12,31 @@ package iFlynnJava.Functions.Task3;
  * Наконец, в функции main сделать цикл от 1 до 1000, проверять, равняется ли F(i) тройке,
  * и если да, то увеличивать счетчик на единицу (который заводится предварительно).
  */
+
 public class Task3 {
-  /** public static void main(String[] args) {
+    public static void main(String[] args) {
+        int count = 0;
 
-        for (int i = 1; i < 1000; i++) {
-            if (F(i) == 3)
-             // int count++;
+        for (int i = 1; i <= 1000; i++) {
+           // System.out.println(i);
         }
-        System.out.println(F(10));
+        System.out.println(F(1));
     }
 
-    static int F(int n) {
-
-        if (F(0) == 0) {
-
+   public static int F(int n) {
+        if ( n == 0) {
             System.out.println("Равно нулю");
-        } else if (n > 0) {
+
+        } else if (n > 0 && n % 2 ==0) {
             n = F(n / 2);
-        } else if (n % 10 == 0) {
+
+        } else {
             n = 1 + F(n - 1);
+
         }
-        return n;
+         return n;
     }
 
-*/
+
 }
 
