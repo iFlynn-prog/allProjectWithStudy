@@ -17,10 +17,14 @@ public class Monitor {
         set = new HashSet<>();
     }
 
+    void fire(String name) {
+        for (IMonitor item : set) {
+            if (item != null) item.fileAdded(name);
+        }
+    }
     public Path getPath() {
         return path;
     }
-
     public void start() {
         try (WatchService watch = FileSystems.getDefault().newWatchService()) {
             path.register(watch, StandardWatchEventKinds.ENTRY_CREATE);
@@ -35,7 +39,6 @@ public class Monitor {
             ex.printStackTrace();
         }
     }
-
     public boolean add(IMonitor obj) {
         return set.add(obj);
     }
